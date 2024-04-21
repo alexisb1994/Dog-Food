@@ -1,49 +1,90 @@
-
-:root
-{
-    --color-primario:blue;
-    --color-secundario:yellow;
+:root {
+    --color-primario: blue;
+    --color-secundario: yellow;
 
 }
 
 
-*{
-margin: 0;
-padding: 0;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 200;
-font-size: 20px;
-}
-header{
- 
- /*  background-image: url(../assets/image/fondonaranja.avif);   
-    background-repeat: no-repeat; */
-background: url(../assets/image/fondonaranja.avif) no-repeat;
-height: 150px;   
- background-size:cover;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '', 'Pedigree Unleashed', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
 }
 
+body{
+    height: 100vh;
+}
+header {
 
-.subtitulos{
-color: black;
+       background: url(../assets/image/fondonaranja.avif) no-repeat;
 
 }
-
-h2{
-color: var(--color-primario);
-font-size: 50px;
-font-weight: 800;
+main{
+   
+}
+.creemos{
+    background-image: url(../assets/image/fondonaranja.avif);
+background-size: 100% auto;
+display: flex;
+flex-direction: row;
+max-width: max-content;
+padding:30px;
 }
 
+.subtitulos h3 {
+    color: white;
+font-size: 90px;
+font-weight: 700;
+}
 
-.enlase{
-    background:#003399;
+.subtitulos p{
+/* width: 80%; */
+margin-top: 30px;
+font-size: 25px;
+}
+
+button{
+margin-top: 30px;    
 color: white;
-font-size: 18px;
-/* border: 1px black solid; */
-border-color: black;
-border-style: solid;
-border-radius: 5px;
-border-width: 1px;
+padding: 20px ;
+border: 0px;
+border-radius: 50px;
+/* flex-direction: column; */
+background-color: #003399;
+
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.produ{
+    max-width: 100%;
+    display: flex;
+        flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.produ h2{text-align: center;
+justify-content: center;
+display: block;
+}
+.comida {
+    display: flex;
+ /* flex-basis: auto; */
+ justify-content: space-around;
+}
+
+.contenedor {
+    width: 200px;
+    height: 500px;
+    flex-basis: auto;
+}
+
+img{
+size: 25;
 
 }
