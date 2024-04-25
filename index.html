@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,17 +14,15 @@
     <header>
         <section class="head">
             <!-- titulo -->
-            <div class="head1">
-                <H1>Recetas para todos los perros </H1>
-            </div>
+            
             <div>
-                    <img src="./image/logo.png" alt="Logo">
-                </div>
+                <img width="302px" height="130px" src="./assets/image/logo.png" alt="Logo">
+            </div>
             <div class="head2">
-                
+
                 <!-- nav -:es el navegador -->
                 <nav>
-                    <ol>
+                    <ul class="head1">
                         <li>
                             <a href="">Nuestros productos</a>
                         </li>
@@ -38,7 +37,7 @@
                         </li>
 
 
-                    </ol>
+                    </ul>
 
 
                 </nav>
@@ -62,7 +61,7 @@
             </div>
 
             <div>
-                <img src="./assets/image/hero-default-dog.avif" alt="foto de perro">
+                <img src="./assets/image/hero-default-dog.avif";" alt="foto de perro">
 
 
 
@@ -106,7 +105,7 @@
             </article>
             </SECtion>
         </div>
-        <SECtion><!-- SECCION 4- LA HORA DE LA CENA -->
+        <SECtion class="cena-efect"><!-- SECCION 4- LA HORA DE LA CENA -->
             <div class="cena">
                 <div>
                     <H2 class="subtitulos">No hay mejor momento como la hora de la cena</H2>
@@ -119,41 +118,35 @@
             </div>
         </SECtion>
 
-        <SEction><!-- SECCION 5- FORMULARIO -->
-            <!--formulario  -->
-            <form>
-                <LABEL>
-                    NOMBRE:
-                    <input type="text" name="nombre" id="name" placeholder="INGRESE SU NOMBRE">
 
-                </LABEL>
-                <LABEL>
-                    APELLIDO:
-                    <input type="text" name="apellido" id="ape" placeholder="INGRESE SU APELLIDO">
-
-                </LABEL>
-                <LABEL>
-                    TELEFONO:
-                    <input type="tel" name="telefono" id="tel" placeholder="INGRESE SU TELEFONO">
-
-                </LABEL>
-                <LABEL>
-                    EMAIL:
-                    <input type="email" name="email" id="mail" placeholder="INGRESE SU EMAIL">
-
-                </LABEL>
-                <LABEL>
-                    CONTRASEÑA:
-                    <input required type="password" name="contraseña" id="pass" placeholder="INGRESE SU CONTRASEÑA">
-
-                </LABEL>
-                <button type="submit">ENVIAR DATOS</button>
-
-            </form>
-        </SEction>
     </main>
     <footer>
+        <SEction class="formulario"><!-- SECCION 5- FORMULARIO -->
+            <!--formulario  -->
 
+            <form action="https://formspree.io/f/mjvnjldd" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required />
+                    </li>
+                    <li>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="email" required />
+                    </li>
+                    <li>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="msg" required></textarea>
+                    </li>
+
+                </ul>
+                <br>
+                <div>
+                    <buttonc class="enviar" type="submit">ENVIAR </button>
+                </div>
+            </form>
+
+        </SEction>
     </footer>
 
 </body>
