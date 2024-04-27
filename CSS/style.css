@@ -5,6 +5,8 @@
     font-family: '', 'Pedigree Unleashed', Arial, sans-serif;
     font-weight: 200;
     font-size: 20px;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -13,48 +15,45 @@ body {
     flex-direction: column;
 }
 
-header {
-    /* max-width: 100%; */
-    /* background: url(../assets/image/fondonaranja.avif) no-repeat; */
-}
-
-.head {
-    max-width: 100%;
-    /* display: flex; */
-    background: url(../assets/image/fondonaranja.avif)no-repeat;
+header{
+    min-height:80px;
+display: flex;
+justify-content: space-between;
+align-items: end;
+background-color: #f0ac03;
+padding: 10px;
 border: none;
-
-}
-li,a {
-    text-decoration: none;
-    color:#000;
-    font-size: 25px;
 }
 
-.head1{
+.logo img{
+    height: 80px;
+}
 
-    display: inline-block;
+.head1 {
     display: flex;
-    justify-content: end;
-}
 
+}
 .head1 li{
-    margin-right: 20px;
+    padding-left: 20px;
+    }
+    .head1 a{
+        font-size: 30px;
+        }
+
+.head1 a:hover{
+    color: white;
+    
 }
-.head2 {
- 
+
+@media (max-width:700px){
+header {
+    flex-direction: column;
+}
 
 }
-
-ol,
-li {
-    display: inline;
-}
-
-main {}
 
 .creemos {
-    width: 100%;
+    max-width: 100%;
     background-image: url(../assets/image/fondonaranja.avif);
     background-size: 100% auto;
     display: flex;
@@ -75,7 +74,9 @@ main {}
     font-size: 25px;
 }
 
-
+.perro{
+    max-width: 100%;
+}
 
 h2 {
     text-align: center;
@@ -133,10 +134,10 @@ h2 {
     align-items: center;
     background-color: #f0ac03;
     padding: 30px;
-
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 1.5s;
+    height: 300px;
 }
 
 .cena h2 {
@@ -180,7 +181,7 @@ button {
 
 button:hover {
     background-color: rgb(248, 201, 140);
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 .but1:hover {
@@ -199,9 +200,14 @@ button:hover {
 }
 
 .contenedor img:hover {
-    animation-name: imagenes;
-    animation-duration: 4s;
+    animation: imagenes 2s ;
+    /* animation-name: imagenes;
+    animation-duration: 2s; */
     cursor: pointer;
+}
+
+.perrito img{
+height: 280px ;
 }
 
 
@@ -229,10 +235,10 @@ form {
     margin: 0;
   }
   li{
-    display: block;
+    /* display: block; */
   }
-  form li + li {
-    margin-top: 2%;
+  form li  {
+    margin-top: 10px;
   }
   
   label {
@@ -274,16 +280,12 @@ form {
 
   input {
     height: 55px;
-    padding: 6px 15px !important;
+    padding: 6px 15px ;
     font-size: 16px;
-    /* line-height: 1.42857; */
-    color: #1e1e1e;
+        color: #1e1e1e;
     background-color: white;
-    /* border: 2px solid #ebebeb; */
-    width: 306px !important;
-    resize: none;
-    margin-bottom: 9px;
-    border-radius: 28px !important;
+       margin-bottom: 9px;
+    border-radius: 10px ;
 
   }
   .enviar{
